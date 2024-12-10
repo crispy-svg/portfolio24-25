@@ -369,7 +369,9 @@ header a{
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: 80px;
     }
-        .thumbnail{
+}
+@media screen and (max-width 360px){
+    .thumbnail{
         width: 100px;
         height: 100px;
         bottom: 10px;
