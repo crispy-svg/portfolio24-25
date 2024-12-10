@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Login page</title>
+<style>
+    /* Style all input fields */
+    body{
+        background-color: #997e74;
+        color: white;
+    }
+    label{
+        margin: auto;
+        margin-top: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    input {
+      width: 25vw;
+      padding: 12px;
+      margin: auto;
+      margin-top: 10%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    input[type=button] {
+        margin-top: 5%;
+        background-color: #f1683a;
+        border: none;
+        color: #eee;
+        box-shadow: 0 9px #a84828;
+    }
+    input[type=button]:active {
+        box-shadow: 0 5px #a84828;
+        transform: translateY(4px);
+    }
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #eee;
+      color: white;
+      box-shadow: 0 5px #a84828;
+        transform: translateY(4px);
+
+    }
+
+    /* Style the container for inputs */
+    .container {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 678px){
+        input{
+            width: 50vw;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="pswd">Enter your password: </label>
+            <input type="password" id="pswd">
+            <input type="button" value="Submit" onclick="checkPswd();" />
+        </form>
+    </div>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="portfolio.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
