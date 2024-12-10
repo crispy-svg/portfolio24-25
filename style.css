@@ -369,4 +369,28 @@ header a{
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: 80px;
     }
+        .thumbnail{
+        width: 100px;
+        height: 100px;
+        bottom: 10px;
+        left: 40%;
+        gap: 10px; 
+    }
+    .thumbnail .item{
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        position: relative;
+    }
+    .thumbnail .item .content{
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    .arrows{
+        right: 62%;
+        top: 92%;
+    }
 }
